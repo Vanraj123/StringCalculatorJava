@@ -3,4 +3,4 @@
   Output: an integer, sum of the numbers
 
 # 1.Create a simple String calculator
-  ![Testcase1](screenshots/Testcase1.png)
+  ![Testcase1](Screenshots/Testcase1.png)
