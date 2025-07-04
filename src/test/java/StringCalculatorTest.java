@@ -56,5 +56,15 @@ class StringCalculatorTest {
         assertEquals(7, calc.add("//-\n2-2-3"));
     }
 
+    @Test                                                           // For The negetive number in string which gave the exception
+    void testNegativeNumbersThrowException() {
+        Exception ex = assertThrows(IllegalArgumentException.class, () -> {
+            calc.add("1,-5,3,-6");
+        });
+        assertTrue(ex.getMessage().contains("negative numbers not allowed"));
+        assertTrue(ex.getMessage().contains("-5"));
+        assertTrue(ex.getMessage().contains("-6"));
+    }
+
 
 }
