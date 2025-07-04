@@ -40,7 +40,14 @@ class StringCalculatorTest {
 
     @Test                                                           // For Any Amount of numbers
     void testAnyAmountOfNumbers() {
-    assertEquals(510, calc.add("1,2,3,4,500"));
-    assertEquals(10045, calc.add("1,2,3,4,5,6,7,8,9,10000"));
-}
+        assertEquals(510, calc.add("1,2,3,4,500"));
+        assertEquals(10045, calc.add("1,2,3,4,5,6,7,8,9,10000"));
+    }
+
+    @Test                                                           // For handling new lines between numbers (instead of commas)
+    void testNewlineAsDelimiter() {
+        assertEquals(6, calc.add("1\n2,3"));
+        assertEquals(10, calc.add("1\n2\n3,4"));
+    }
+
 }
