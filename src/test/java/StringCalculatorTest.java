@@ -50,4 +50,11 @@ class StringCalculatorTest {
         assertEquals(10, calc.add("1\n2\n3,4"));
     }
 
+    @Test                                                           // For changing the delimiter, the beginning of the string 
+    void testCustomDelimiter() {
+        assertEquals(4, calc.add("//;\n2;2"));
+        assertEquals(7, calc.add("//-\n2-2-3"));
+    }
+
+
 }
