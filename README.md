@@ -25,9 +25,11 @@
 
 # 6.Numbers bigger than 1000 should be ignored, so adding 2 + 1001 = 2
   ![Testcase6](Screenshots/Testcase6.png)
+  ![Testcase6_1](Screenshots/Testcase6_1.png)
 
 # 7.Delimiters can be of any length with the following format: “//[delimiter]\n” for example: “//[***]\n1***2***3” should return 6
   ![Testcase7](Screenshots/Testcase7.png)
+  ![Testcase7_1](Screenshots/Testcase7_1.png)
 
 # 8.Allow multiple delimiters like this: “//[delim1][delim2]\n” for example “//[*][%]\n1*2%3” should return 6.
   ![Testcase8](Screenshots/Testcase8.png)
