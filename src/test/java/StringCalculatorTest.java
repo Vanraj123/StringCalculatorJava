@@ -41,7 +41,7 @@ class StringCalculatorTest {
     @Test                                                           // For Any Amount of numbers
     void testAnyAmountOfNumbers() {
         assertEquals(510, calc.add("1,2,3,4,500"));
-        assertEquals(10045, calc.add("1,2,3,4,5,6,7,8,9,10000"));
+        assertEquals(1045, calc.add("1,2,3,4,5,6,7,8,9,1000"));
     }
 
     @Test                                                           // For handling new lines between numbers (instead of commas)
@@ -65,6 +65,13 @@ class StringCalculatorTest {
         assertTrue(ex.getMessage().contains("-5"));
         assertTrue(ex.getMessage().contains("-6"));
     }
+
+    @Test                                                               // For Value is greater than 1000
+    void testNumbersGreaterThan1000AreIgnored() {
+        assertEquals(2, calc.add("2,1001"));
+        assertEquals(1002, calc.add("2,1000"));
+        assertEquals(2, calc.add("2,1001,2000,3000"));
+}
 
 
 }
