@@ -79,5 +79,10 @@ class StringCalculatorTest {
         assertEquals(10, calc.add("//[abc]\n1abc2abc3abc4"));
     }
 
+    @Test                                                           // For Allowing multiple delimiters
+    void testMultipleDelimiters() {
+        assertEquals(6, calc.add("//[*][%]\n1*2%3"));
+        assertEquals(10, calc.add("//[abc][def]\n1abc2def3abc4"));
+    }
 
 }

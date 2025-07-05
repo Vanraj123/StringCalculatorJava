@@ -16,11 +16,15 @@ public class StringCalculator {
             numbers = numbers.substring(delimiterEndIndex + 1);
 
             if (customDelimiterPart.startsWith("[") && customDelimiterPart.endsWith("]")) {
-                // Multi-character delimiter
-                String customDelimiter = customDelimiterPart.substring(1, customDelimiterPart.length() - 1);
-                delimiter = Pattern.quote(customDelimiter);
+                // one or more delimiters
+                List<String> delimiters = new ArrayList<>();
+                Matcher m = Pattern.compile("\\[(.*?)]").matcher(customDelimiterPart);
+                while (m.find()) {
+                    delimiters.add(Pattern.quote(m.group(1)));
+                }
+                delimiter = String.join("|", delimiters);
             } else {
-                // Single-character delimiter
+                // Single-character delimiter without brackets
                 delimiter = Pattern.quote(customDelimiterPart);
             }
         }
