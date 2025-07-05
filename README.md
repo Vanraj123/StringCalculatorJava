@@ -4,7 +4,7 @@
 
 # 1.Create a simple String calculator
   ![Testcase1](Screenshots/Testcase1.png)
-  ![Testcase1_1](Screenshots/Testcase1_1.png)
+  ![Testcase1_1](Screenshots/Testcase1_1.jpg)
 
 # 2.Allow the add method to handle any amount of numbers.
   ![Testcase2](Screenshots/Testcase2.png)
@@ -33,9 +33,12 @@
 
 # 8.Allow multiple delimiters like this: “//[delim1][delim2]\n” for example “//[*][%]\n1*2%3” should return 6.
   ![Testcase8](Screenshots/Testcase8.png)
+  ![Testcase8_1](Screenshots/Testcase8_1.png)
 
 # 9.make sure you can also handle multiple delimiters with length longer than one char
   ![Testcase9](Screenshots/Testcase9.png)
+  ![Testcase9_1](Screenshots/Testcase9_1.png)
+  
 
 
 
