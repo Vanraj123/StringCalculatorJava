@@ -71,7 +71,13 @@ class StringCalculatorTest {
         assertEquals(2, calc.add("2,1001"));
         assertEquals(1002, calc.add("2,1000"));
         assertEquals(2, calc.add("2,1001,2000,3000"));
-}
+    }
+
+    @Test                                                           // For Delimiters can be of any length
+    void testCustomDelimiterOfAnyLength() {
+        assertEquals(6, calc.add("//[***]\n1***2***3"));
+        assertEquals(10, calc.add("//[abc]\n1abc2abc3abc4"));
+    }
 
 
 }
