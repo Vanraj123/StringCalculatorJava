@@ -7,6 +7,8 @@
 
 # 2.Allow the add method to handle any amount of numbers.
   ![Testcase2](Screenshots/Testcase2.png)
+  ![Testcase2_1](Screenshots/Testcase2_1.png)
+
 
 # 3.Allow the add method to handle new lines between numbers (instead of commas). ("1\n2,3" should return 6)
   ![Testcase3](Screenshots/Testcase3.png)
