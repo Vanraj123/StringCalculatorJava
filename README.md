@@ -4,6 +4,7 @@
 
 # 1.Create a simple String calculator
   ![Testcase1](Screenshots/Testcase1.png)
+  ![Testcase1_1](Screenshots/Testcase1_1.png)
 
 # 2.Allow the add method to handle any amount of numbers.
   ![Testcase2](Screenshots/Testcase2.png)
@@ -20,6 +21,7 @@
 
 # 5.Calling add with a negative number will throw an exception: "negative numbers not allowed <negative_number>".If there are multiple negative numbers, show all of them in the exception message, separated by commas.
   ![Testcase5](Screenshots/Testcase5.png)
+  ![Testcase5_1](Screenshots/Testcase5_1.png)
 
 # 6.Numbers bigger than 1000 should be ignored, so adding 2 + 1001 = 2
   ![Testcase6](Screenshots/Testcase6.png)
